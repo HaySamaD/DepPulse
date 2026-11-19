@@ -1,0 +1,17 @@
+2026-11-19T10:02:10Z | WARN | db_pool | Connection pool at 85% capacity
+2026-11-19T10:00:01Z | INFO | auth_service | User login succeeded id=401
+2026-11-19T10:01:45Z | ERROR | payment_api | TimeoutError connecting to stripe
+gateway req=992 ip=10.0.0.14
+2026-11-19T10:01:12Z | ERROR | payment_api | TimeoutError connecting to stripe
+gateway req=991 ip=10.0.0.8
+CORRUPTED_LINE_WITHOUT_VALID_FORMAT
+2026-11-19T10:03:00Z | ERROR | auth_service | KeyError missing token header
+req=995
+2026-11-19T10:03:00Z | CRITICAL | billing_core | Deadlock detected |
+table=invoices | retry=3
+2026-11-19T10:01:45Z | ERROR | payment_api | TimeoutError connecting to stripe
+gateway req=999 ip=10.0.0.21
+BAD_TIME_FORMAT | ERROR | auth_service | Invalid timestamp must be skipped
+2026-11-19T10:04:15Z | UNKNOWN | cache_node | Unsupported level must be skipped
+2026-11-19T10:05:30Z | ERROR | auth_service | KeyError missing token header
+req=1042
