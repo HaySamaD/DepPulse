@@ -1,8 +1,13 @@
-from src import logs_sort_merge
+from src import parse_log_line
 
 
 def main() -> None:
-    logs_sort_merge()
+    path: str = "/home/aryahi/Desktop/projects/my_project/sandbox_data/sample.log"
+    with open(path, 'r', encoding="utf-8") as file:
+        for line in file:
+            parse_log_line(line.strip())
+            print("\n")
+    pass
 
 
 if __name__ == "__main__":
