@@ -1,5 +1,4 @@
 import re
-from typing import Optional
 
 _TIMESTAMP_REGEX = re.compile(
     r"^\d{4}"
@@ -12,7 +11,7 @@ _TIMESTAMP_REGEX = re.compile(
 
 _VALID_LEVEL = ("WARN", "INFO", "CRITICAL", "ERROR")
 
-def parse_log_line(line: str) -> Optional[dict[str, str]]:
+def parse_log_line(line: str) -> dict[str, str] | None:
     action: list = [e.strip() for e in line.split('|', 3)]
     if (
         len(action) < 4
